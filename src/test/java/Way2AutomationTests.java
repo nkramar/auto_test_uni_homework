@@ -43,7 +43,7 @@ public class Way2AutomationTests {
     chromeDriver.findElement(By.cssSelector("textarea")).sendKeys("Hello, I'm Petr Petrov!");
     chromeDriver.findElement(By.name("password")).sendKeys("12345");
     chromeDriver.findElement(By.name("c_password")).sendKeys("12345");
-    chromeDriver.findElement(By.cssSelector("input[type='submit'][type='submit']")).click();
+    chromeDriver.findElement(By.cssSelector("input[type='submit']")).click();
 
 
   }
