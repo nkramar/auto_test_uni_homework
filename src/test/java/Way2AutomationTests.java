@@ -29,7 +29,7 @@ public class Way2AutomationTests {
     chromeDriver.findElement(By.xpath("//label[normalize-space()='Single']")).click();
     chromeDriver.findElement(By.xpath("//label[normalize-space()='Reading']")).click();
     chromeDriver.findElement(By.cssSelector("fieldset:nth-child(4) > select")).click();
-    chromeDriver.findElement(By.cssSelector("fieldset:nth-child(4) > select")).findElement(By.xpath("//option[. = 'India']")).click();
+    chromeDriver.findElement(By.cssSelector("fieldset:nth-child(4) > select")).findElement(By.xpath("//option[.='India']")).click();
     chromeDriver.findElement(By.cssSelector(".time_feild:nth-child(2) > select")).click();
     chromeDriver.findElement(By.cssSelector(".time_feild:nth-child(2) > select")).findElement(By.xpath("//option[.='1']")).click();
     chromeDriver.findElement(By.cssSelector(".time_feild:nth-child(3) > select")).click();
@@ -39,7 +39,7 @@ public class Way2AutomationTests {
     chromeDriver.findElement(By.name("phone")).sendKeys("12345678910");
     chromeDriver.findElement(By.name("username")).sendKeys("petr_petrov");
     chromeDriver.findElement(By.name("email")).sendKeys("petr_petrov@gmail.com");
-    chromeDriver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\Devel\\auto_test_uni_homework\\src\\test\\avatar.png");
+    chromeDriver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\Devel\\auto_test_uni_homework\\src\\test\\resources\\avatar.png");
     chromeDriver.findElement(By.cssSelector("textarea")).sendKeys("Hello, I'm Petr Petrov!");
     chromeDriver.findElement(By.name("password")).sendKeys("12345");
     chromeDriver.findElement(By.name("c_password")).sendKeys("12345");
