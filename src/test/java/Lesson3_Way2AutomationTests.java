@@ -39,7 +39,7 @@ public class Lesson3_Way2AutomationTests {
     chromeDriver.findElement(By.name("phone")).sendKeys("12345678910");
     chromeDriver.findElement(By.name("username")).sendKeys("petr_petrov");
     chromeDriver.findElement(By.name("email")).sendKeys("petr_petrov@gmail.com");
-    chromeDriver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\Devel\\auto_test_uni_homework\\src\\test\\resources\\avatar.png");
+    chromeDriver.findElement(By.xpath("//input[@type='file']")).sendKeys(System.getProperty("user.dir")+"\\src\\test\\resources\\avatar.png");
     chromeDriver.findElement(By.cssSelector("textarea")).sendKeys("Hello, I'm Petr Petrov!");
     chromeDriver.findElement(By.name("password")).sendKeys("12345");
     chromeDriver.findElement(By.name("c_password")).sendKeys("12345");
