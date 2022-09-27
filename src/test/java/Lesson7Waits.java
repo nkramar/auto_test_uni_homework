@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 
-public class Lesson7_HW_Waits {
+public class Lesson7Waits {
 
   private WebDriver chromeDriver;
   private WebDriverWait wait;
